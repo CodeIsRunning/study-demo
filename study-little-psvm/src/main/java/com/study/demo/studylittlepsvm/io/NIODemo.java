@@ -1,5 +1,6 @@
 package com.study.demo.studylittlepsvm.io;
 
+
 import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.ResourceLoader;
 
@@ -12,6 +13,8 @@ import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.util.List;
+import java.io.InputStream;
+
 
 /**
  * @program: study-demo
@@ -20,6 +23,7 @@ import java.util.List;
  * @create: 2019-08-23 15:08
  **/
 public class NIODemo {
+
 
 
     public static void main(String[] args) throws Exception{
@@ -59,6 +63,15 @@ public class NIODemo {
             byteBuffer.clear();
 
         }
+
+    public static void main(String[] args) {
+
+    }
+
+    private  void nioTest(){
+        InputStream inputStream = NIODemo.class.getClassLoader().getResourceAsStream("NIOTest.txt");
+
+
 
     }
 
